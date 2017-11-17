@@ -1,0 +1,11 @@
+applications:
+- name: cf-spring
+  disk_quota: 2G
+  instances: 2
+  memory: 1G
+  routes:
+  - route: cf-spring-runtier-uninfectiousness.cfapps.io
+  services:
+  - cf-spring-db
+  - cf-spring-newrelic
+  stack: cflinuxfs2
